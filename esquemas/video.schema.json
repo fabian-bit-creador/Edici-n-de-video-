@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["marca", "color", "es_demo", "destino", "cta", "fuente", "audio", "escenas"],
+  "properties": {
+    "marca": { "type": "string", "minLength": 1, "maxLength": 42 },
+    "color": { "type": "string", "pattern": "^#[0-9a-fA-F]{6}$" },
+    "es_demo": { "type": "boolean" },
+    "destino": { "type": "string", "minLength": 1, "maxLength": 1200 },
+    "cta": { "type": "string", "minLength": 1, "maxLength": 65 },
+    "fuente": { "type": "string", "minLength": 1, "maxLength": 100 },
+    "audio": { "type": "string", "maxLength": 500 },
+    "escenas": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "items": { "$ref": "#/definitions/escena" }
+    }
+  },
+  "definitions": {
+    "escena": {
+      "type": "object", "additionalProperties": false,
+      "required": ["etiqueta", "titulo", "detalle", "locucion", "segundos"],
+      "properties": {
+        "etiqueta": { "type": "string", "minLength": 1, "maxLength": 32 },
+        "titulo": { "type": "string", "minLength": 1, "maxLength": 85 },
+        "detalle": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "locucion": { "type": "string", "minLength": 1, "maxLength": 320 },
+        "segundos": { "type": "integer", "minimum": 2, "maximum": 20 }
+      }
+    }
+  }
+}

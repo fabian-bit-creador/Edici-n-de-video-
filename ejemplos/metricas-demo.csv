@@ -1,0 +1,4 @@
+pieza_id,red,variante,visualizaciones,visitas,consultas,ventas,ingresos,coste_marketing,moneda
+ejemplo-instagram-a,instagram,a,1000,40,8,2,40000,10000,CLP
+ejemplo-instagram-b,instagram,b,1200,36,6,1,20000,10000,CLP
+ejemplo-youtube-a,youtube,a,0,0,0,0,0,0,CLP

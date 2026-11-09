@@ -1,0 +1,56 @@
+[
+  {
+    "id": "micomuna360",
+    "nombre": "MiComuna360",
+    "color": "#17375E",
+    "tono": "Ciudadano, claro, cercano y preciso. Explica una idea a la vez.",
+    "audiencia": "Personas que buscan información pública de su comuna en Chile.",
+    "sitio": "https://micomuna360.vercel.app",
+    "reglas": [
+      "Toda cifra debe conservar fuente, unidad, territorio y fecha.",
+      "Distinguir información real de comunas de demostración.",
+      "No presentar el proyecto como un canal oficial municipal."
+    ]
+  },
+  {
+    "id": "monitoreo-intensivo",
+    "nombre": "Monitoreo Intensivo",
+    "color": "#5B43C7",
+    "tono": "Docente, práctico y descriptivo. Mostrar una tarea concreta.",
+    "audiencia": "Docentes que acompañan la práctica independiente de sus estudiantes.",
+    "sitio": null,
+    "reglas": [
+      "Las demostraciones usan estudiantes y registros ficticios.",
+      "I/R/C describe el avance observado; no equivale a una calificación.",
+      "No anunciar pagos, IA o funciones futuras como disponibles.",
+      "Confirmar coautoría y créditos antes de presentar el producto."
+    ]
+  },
+  {
+    "id": "sindicato",
+    "nombre": "Sindicato",
+    "color": "#175B67",
+    "tono": "Institucional, respetuoso, directo y útil para sus integrantes.",
+    "audiencia": "Integrantes del sindicato que necesitan información y orientación.",
+    "sitio": null,
+    "reglas": [
+      "Usar solo contenidos aprobados para difusión por el sindicato.",
+      "Confirmar vigencia y fuente de beneficios, fechas y derechos.",
+      "No incluir documentos internos ni datos personales en este repositorio público.",
+      "Confirmar el dominio oficial antes de preparar una publicación real."
+    ]
+  },
+  {
+    "id": "futuro-negocio",
+    "nombre": "Tu próximo negocio",
+    "color": "#225A45",
+    "tono": "Claro, concreto y orientado al beneficio verificable.",
+    "audiencia": "Por definir en el brief de la campaña.",
+    "sitio": null,
+    "reglas": [
+      "Definir oferta, público, canal de consulta y condiciones antes de vender.",
+      "No inventar testimonios, resultados, precios ni escasez.",
+      "Cambiar este perfil por la identidad real antes de publicar."
+    ]
+  }
+]

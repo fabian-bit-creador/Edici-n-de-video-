@@ -1,0 +1,36 @@
+{
+  "name": "micomuna360-video-gasto-municipal",
+  "private": true,
+  "type": "module",
+  "description": "Video vertical «Top 5: ¿en qué se gasta la plata de La Pintana?» hecho con Remotion a partir de datos oficiales.",
+  "scripts": {
+    "studio": "remotion studio",
+    "preparar": "node scripts/preparar.ts",
+    "guion": "node scripts/ver-guion.ts",
+    "voz": "node scripts/voz.ts",
+    "musica": "node scripts/musica.ts",
+    "render:completo": "remotion render GastoLaPintana salida/gasto-la-pintana-vertical-completo.mp4",
+    "render:60": "remotion render GastoLaPintana60 salida/gasto-la-pintana-vertical-60s.mp4",
+    "video": "npm run voz && npm run musica && npm run render:completo && npm run render:60",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/bricolage-grotesque": "5.3.0",
+    "@fontsource/nunito": "5.3.0",
+    "@remotion/cli": "4.0.537",
+    "lucide-react": "1.23.0",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "remotion": "4.0.537"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.1",
+    "@types/react": "19.2.2",
+    "typescript": "5.9.3",
+    "@remotion/bundler": "4.0.537",
+    "@remotion/renderer": "4.0.537"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}

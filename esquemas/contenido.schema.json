@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Contenido para un video y su prueba de ganchos A/B",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ganchos", "escenas", "copies", "pendientes"],
+  "properties": {
+    "ganchos": { "type": "array", "minItems": 2, "maxItems": 2, "uniqueItems": true, "items": { "type": "string", "minLength": 1, "maxLength": 85 } },
+    "escenas": {
+      "type": "array", "minItems": 4, "maxItems": 4,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["etiqueta", "titulo", "detalle", "locucion", "segundos"],
+        "properties": {
+          "etiqueta": { "type": "string", "minLength": 1, "maxLength": 32 },
+          "titulo": { "type": "string", "minLength": 1, "maxLength": 85 },
+          "detalle": { "type": "string", "minLength": 1, "maxLength": 160 },
+          "locucion": { "type": "string", "minLength": 1, "maxLength": 320 },
+          "segundos": { "type": "integer", "minimum": 2, "maximum": 20 }
+        }
+      }
+    },
+    "copies": {
+      "type": "object", "additionalProperties": false,
+      "required": ["instagram", "tiktok", "youtube"],
+      "properties": {
+        "instagram": { "type": "string", "minLength": 1, "maxLength": 1500 },
+        "tiktok": { "type": "string", "minLength": 1, "maxLength": 1500 },
+        "youtube": { "type": "string", "minLength": 1, "maxLength": 1500 }
+      }
+    },
+    "pendientes": { "type": "array", "maxItems": 20, "items": { "type": "string", "minLength": 1, "maxLength": 300 } }
+  }
+}

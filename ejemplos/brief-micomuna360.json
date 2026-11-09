@@ -1,0 +1,22 @@
+{
+  "id": "micomuna360-presentacion",
+  "marca_id": "micomuna360",
+  "es_demo": true,
+  "objetivo": "visitas",
+  "tema": "Tu comuna en un solo lugar",
+  "audiencia": "Personas de La Pintana que buscan información pública de su comuna.",
+  "problema": "Buscar trámites, beneficios e información comunal puede tomar tiempo.",
+  "beneficio": "Encuentra información pública en lenguaje simple, con sus fuentes.",
+  "puntos": ["Trámites y beneficios", "Mapa y lugares", "Datos y transparencia"],
+  "cta": "Explora MiComuna360",
+  "destino": "https://micomuna360.vercel.app/la-pintana",
+  "duracion_segundos": 24,
+  "canales": ["instagram", "tiktok", "youtube"],
+  "fuentes": [
+    {
+      "url": "https://github.com/fabian-bit-creador/Micomuna360/blob/claude/micomuna360-architecture-gadm7s/README.md",
+      "descripcion": "Descripción pública del proyecto y de sus secciones. Volver a comprobar el sitio antes de difundir.",
+      "verificado_el": "2026-11-09"
+    }
+  ]
+}
