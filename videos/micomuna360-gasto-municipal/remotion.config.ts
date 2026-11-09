@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import { availableParallelism } from "node:os";
 import { Config } from "@remotion/cli/config";
 
 Config.setVideoImageFormat("jpeg");
@@ -7,7 +8,7 @@ Config.setCodec("h264");
 Config.setCrf(18);
 Config.setPixelFormat("yuv420p");
 Config.setOverwriteOutput(true);
-Config.setConcurrency(4);
+Config.setConcurrency(Math.min(4, availableParallelism()));
 
 /*
  * En la nube de Claude hay un Chromium ya instalado; en otro computador
@@ -15,4 +16,5 @@ Config.setConcurrency(4);
  */
 const LOCAL_SHELL =
   "/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell";
-if (fs.existsSync(LOCAL_SHELL)) Config.setBrowserExecutable(LOCAL_SHELL);
+const browser = process.env.REMOTION_BROWSER_EXECUTABLE ?? (fs.existsSync(LOCAL_SHELL) ? LOCAL_SHELL : undefined);
+if (browser) Config.setBrowserExecutable(browser);

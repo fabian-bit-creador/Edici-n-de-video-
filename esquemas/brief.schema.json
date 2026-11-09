@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Brief de campaña",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "marca_id", "es_demo", "objetivo", "tema", "audiencia", "problema", "beneficio", "puntos", "cta", "destino", "duracion_segundos", "canales", "fuentes"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$", "maxLength": 60 },
+    "marca_id": { "type": "string", "minLength": 1, "maxLength": 60 },
+    "es_demo": { "type": "boolean" },
+    "objetivo": { "enum": ["informar", "participacion", "visitas", "consultas", "ventas"] },
+    "tema": { "type": "string", "minLength": 1, "maxLength": 72 },
+    "audiencia": { "type": "string", "minLength": 1, "maxLength": 240 },
+    "problema": { "type": "string", "minLength": 1, "maxLength": 150 },
+    "beneficio": { "type": "string", "minLength": 1, "maxLength": 150 },
+    "puntos": { "type": "array", "minItems": 1, "maxItems": 4, "items": { "type": "string", "minLength": 1, "maxLength": 34 } },
+    "cta": { "type": "string", "minLength": 1, "maxLength": 65 },
+    "destino": { "type": "string", "minLength": 1, "maxLength": 1200 },
+    "duracion_segundos": { "type": "integer", "minimum": 20, "maximum": 60 },
+    "canales": { "type": "array", "minItems": 1, "maxItems": 3, "uniqueItems": true, "items": { "enum": ["instagram", "tiktok", "youtube"] } },
+    "fuentes": {
+      "type": "array", "maxItems": 20,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["url", "descripcion", "verificado_el"],
+        "properties": {
+          "url": { "type": "string", "minLength": 1, "maxLength": 1200 },
+          "descripcion": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "verificado_el": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+        }
+      }
+    }
+  }
+}

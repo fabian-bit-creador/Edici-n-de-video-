@@ -1,0 +1,19 @@
+{
+  "ganchos": ["Tu comuna, más cerca.", "¿Dónde encuentro esa información?"],
+  "escenas": [
+    { "etiqueta": "Para tu día a día", "titulo": "Tu comuna, más cerca.", "detalle": "Información de La Pintana en un solo lugar.", "locucion": "Tu comuna, más cerca. Conoce MiComuna360.", "segundos": 4 },
+    { "etiqueta": "MiComuna360", "titulo": "Menos búsqueda. Más claridad.", "detalle": "Trámites, beneficios y lugares para orientarte.", "locucion": "Encuentra trámites, beneficios y lugares para orientarte en La Pintana.", "segundos": 6 },
+    { "etiqueta": "Información con contexto", "titulo": "Revisa también la fuente.", "detalle": "Datos y transparencia en lenguaje simple.", "locucion": "Revisa los datos, la transparencia y las fuentes de la información.", "segundos": 6 },
+    { "etiqueta": "Tu próximo paso", "titulo": "Explora MiComuna360", "detalle": "Abre el enlace del perfil y elige lo que necesitas.", "locucion": "Explora MiComuna360. Abre el enlace del perfil y elige lo que necesitas.", "segundos": 8 }
+  ],
+  "copies": {
+    "instagram": "¿Buscas información de La Pintana? En MiComuna360 puedes explorar trámites, beneficios, lugares y datos con sus fuentes. Revisa siempre los requisitos en el organismo correspondiente. Abre el enlace del perfil. #MiComuna360 #LaPintana",
+    "tiktok": "Una forma de explorar información de La Pintana: trámites, beneficios, mapa y datos. Conoce MiComuna360 desde el enlace del perfil. #MiComuna360 #LaPintana",
+    "youtube": "Conoce MiComuna360 y explora información pública de La Pintana. Consulta las fuentes y confirma requisitos con cada institución. El acceso al enlace depende de la superficie de YouTube que uses. #Shorts #MiComuna360"
+  },
+  "pendientes": [
+    "Confirmar que las secciones mencionadas siguen publicadas.",
+    "Configurar el enlace del perfil o una página de enlaces por canal.",
+    "Revisar identidad visual y decidir si se añade voz antes de publicar."
+  ]
+}

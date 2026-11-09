@@ -1,0 +1,16 @@
+{
+  "id": "sindicato-informacion-util",
+  "marca_id": "sindicato",
+  "es_demo": true,
+  "objetivo": "informar",
+  "tema": "Encuentra la información que necesitas",
+  "audiencia": "Integrantes del sindicato.",
+  "problema": "La información útil necesita un lugar claro de consulta.",
+  "beneficio": "Orientar a las personas hacia el canal oficial confirmado.",
+  "puntos": ["Información vigente", "Canal de consulta", "Fuentes aprobadas"],
+  "cta": "Consulta el canal oficial",
+  "destino": "https://example.com/confirmar-canal-oficial",
+  "duracion_segundos": 24,
+  "canales": ["instagram"],
+  "fuentes": []
+}

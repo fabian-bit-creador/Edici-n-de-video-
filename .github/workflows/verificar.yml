@@ -1,0 +1,21 @@
+name: Verificar estudio de contenido
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  contratos-y-video:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            videos/micomuna360-gasto-municipal/package-lock.json
+      - run: npm ci
+      - run: npm run video:instalar
+      - run: npm run check

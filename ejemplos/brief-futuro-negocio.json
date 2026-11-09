@@ -1,0 +1,16 @@
+{
+  "id": "negocio-primera-oferta",
+  "marca_id": "futuro-negocio",
+  "es_demo": true,
+  "objetivo": "consultas",
+  "tema": "Tu producto o servicio",
+  "audiencia": "Reemplazar por el público que tiene el problema que resuelves.",
+  "problema": "Describe aquí un problema real de ese público.",
+  "beneficio": "Describe un beneficio que puedas demostrar.",
+  "puntos": ["Qué incluye", "Cómo funciona", "Qué debe hacer la persona"],
+  "cta": "Conoce la propuesta",
+  "destino": "https://example.com/tu-oferta",
+  "duracion_segundos": 24,
+  "canales": ["instagram", "tiktok", "youtube"],
+  "fuentes": []
+}

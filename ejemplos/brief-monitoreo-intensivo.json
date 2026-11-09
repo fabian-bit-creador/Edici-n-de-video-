@@ -1,0 +1,22 @@
+{
+  "id": "monitoreo-practica-independiente",
+  "marca_id": "monitoreo-intensivo",
+  "es_demo": true,
+  "objetivo": "informar",
+  "tema": "Observa el avance durante la práctica independiente",
+  "audiencia": "Docentes que necesitan registrar evidencia descriptiva en sus recorridos de sala.",
+  "problema": "Durante la práctica independiente cuesta mantener una visión del avance de todo el curso.",
+  "beneficio": "Registra lo que observas para orientar la retroalimentación.",
+  "puntos": ["Mapa de sala", "Recorridos con I/R/C", "Resumen del avance"],
+  "cta": "Conoce Monitoreo Intensivo",
+  "destino": "https://github.com/fabian-bit-creador/monitoreo-intensivo",
+  "duracion_segundos": 24,
+  "canales": ["instagram", "youtube"],
+  "fuentes": [
+    {
+      "url": "https://github.com/fabian-bit-creador/monitoreo-intensivo/blob/main/README.md",
+      "descripcion": "Alcance público. El destino es el repositorio; sustituirlo por el sitio confirmado antes de difundir.",
+      "verificado_el": "2026-11-09"
+    }
+  ]
+}

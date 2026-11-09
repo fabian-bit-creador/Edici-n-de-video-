@@ -1,0 +1,12 @@
+node_modules/
+.cache/
+.tools/
+.env
+.env.*
+!.env.example
+trabajo/
+grabaciones/
+privado/
+**/out/
+**/.DS_Store
+*.log

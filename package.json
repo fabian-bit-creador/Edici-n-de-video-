@@ -1,0 +1,17 @@
+{
+  "name": "estudio-contenido-multimarca",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "estudio": "node scripts/estudio.mjs",
+    "demo": "node scripts/estudio.mjs campana --brief ejemplos/brief-micomuna360.json --contenido ejemplos/contenido-micomuna360.json --out trabajo/demo",
+    "test": "node --test tests/*.test.mjs",
+    "check": "npm test && npm --prefix videos/micomuna360-gasto-municipal run typecheck",
+    "video:instalar": "npm --prefix videos/micomuna360-gasto-municipal ci",
+    "video:revisar": "node scripts/revisar-video.mjs",
+    "studio": "npm --prefix videos/micomuna360-gasto-municipal run studio"
+  },
+  "dependencies": { "ajv": "8.20.0" }
+}
